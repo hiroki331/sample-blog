@@ -1,0 +1,35 @@
+.newsListOuter {
+}
+.newsList {
+}
+.newsList__item {
+  border-bottom: 1px solid #ccc;
+}
+.newsList__link {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.newsList__link:hover .newsList__txt {
+  text-decoration: underline;
+}
+.newsList__cat {
+  padding: 0 10px;
+  background-color: #000;
+  /* border: 1px solid #fff; */
+  border-radius: 5px;
+  width: min(90px, 100%);
+  color: #fff;
+  text-align: center;
+}
+.newsList__day {
+}
+.newsList__txt {
+  flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
