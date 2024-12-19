@@ -1,0 +1,18 @@
+.main {
+  padding-top: 80px;
+}
+.ttl {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.ttl__sub {
+  display: block;
+  font-size: 18px;
+}
+
+.inner {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}

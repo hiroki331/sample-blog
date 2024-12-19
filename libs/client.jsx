@@ -23,11 +23,17 @@ export const getTopNews = async () => {
 };
 
 // ニュース一覧を取得
-export const getNews = async () => {
+export const getNews = async (page = 1, limit = 3) => {
+  const offset = (page - 1) * limit;
+
   const news = await client.getList({
     endpoint: "news",
+    queries: { limit, offset },
   });
-  return news;
+
+  const { totalCount, contents } = news;
+
+  return { totalCount, contents };
 };
 
 // ニュースの詳細を取得

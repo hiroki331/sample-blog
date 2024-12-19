@@ -1,10 +1,8 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import Header from "./components/header";
-import Footer from "./components/footer";
 import TopSlider from "./components/topSlider";
 import TopNews from "./components/topNews";
 import WorksSlider from "./components/worksSlider/worksImg";
+import styles from "./page.module.css";
 
 export default function Home() {
   const bussinessImgs = [
@@ -16,7 +14,6 @@ export default function Home() {
   ];
   return (
     <div className={styles.page}>
-      <Header />
       <main className={styles.main}>
         <TopSlider />
         <section className={`${styles.news} ${styles.inner}`}>
@@ -46,7 +43,6 @@ export default function Home() {
           <WorksSlider />
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

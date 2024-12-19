@@ -1,6 +1,7 @@
 .newsListOuter {
 }
 .newsList {
+  margin-bottom: 20px;
 }
 .newsList__item {
   border-bottom: 1px solid #ccc;
@@ -32,4 +33,36 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+}
+.news__btn {
+  width: min(120px, 100%);
+  margin: 0 0 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.5s;
+  border: 1px solid #000;
+  position: relative;
+}
+.news__btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.news__btn::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  width: 4px;
+  height: 4px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
